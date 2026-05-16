@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+
+<div class="nav"><a href="../../index.html">&larr; Back to Journal</a></div>
+
+<header>
+    <h1>Hello World</h1>
+    <p class="subtitle">Bare metal misadventures in x86_64 and Ghidra.</p>
+</header>
+
+<main>
+    <section>
+        <p>
+            I decided to start a blog and document the things that I do on the weekends.
+            Part of the motivation for this is that I wanted to create a resource that I wish I had when I was less knowledgable and curious
+            about poking at things. Therefore, I think it's appropriate to begin with a 'hello world' post. This post is very basic, because I
+            wanted to set up the infrastructure for this blog and automate what I could to make my life easy. There's no spellchecker, so there
+            will probably be some typos, but all of the code is compiled locally and should compile (it runs on my machine, lol.)
+        </p>
+
+        <p>
+            Having said all of that, I want to cover topics that start slow and ramp up over time. Crawl, walk, run.
+            So, without further ado, I bring you <code>helloWorld.s</code>.
+        </p>
+
+        <div class="artifact-box">
+            <strong>Source Materials:</strong>
+            <ul>
+                <li><a href="src/helloWorld.s">Assembly Source</a></li>
+                <li><a href="src/makefile">Download makefile</a></li>
+                <li><a href="src/hooks.gdb">Download gdb hooks</a></li>
+                <li><a href="tex/writeup.pdf">Download Write-up (PDF)</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3>Documentation</h3>
+        <!-- Uses the aspect-ratio classes from assets/style.css -->
+        <div class="pdf-container pdf-article">
+            <embed src="tex/writeup.pdf" type="application/pdf">
+        </div>
+    </section>
+</main>
+
+<footer>
+	Compiled locally.
+</footer>
+
+</body>
+</html>
