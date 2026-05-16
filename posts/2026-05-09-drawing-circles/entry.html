@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post: [Title]</title>
+
+<link rel="stylesheet" href="../../assets/style.css">
+
+
+</head>
+<body>
+
+<div class="nav"><a href="../../index.html">&larr; Back to Journal</a></div>
+
+<header>
+    <h1>The PCIe Misadventure, Part 1</h1>
+    <p><em>Focus: Enumerating the Bus and MMIO basics.</em></p>
+</header>
+
+<section>
+    <p>In this session, I used <code>gdb</code> to trace how the kernel maps PCI configuration space. The goal was to manually read the Vendor ID without using <code>lspci</code>.</p>
+    
+    <div class="artifact-box">
+        <strong>Source Materials:</strong>
+        <ul>
+            <li><a href="src/main.s">Assembly Source (main.s)</a></li>
+            <li><a href="tex/slides.pdf">Download Write-up (PDF)</a></li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h3>Write-up & Slides</h3>
+
+	<div class="pdf-container pdf-article">
+	    <embed src="tex/writeup.pdf" type="application/pdf">
+	</div>
+
+	<div class="pdf-container pdf-slides">
+    	    <embed src="tex/slides.pdf" type="application/pdf">
+	</div>
+
+	<p class="meta-links">
+	    Unable to view the PDF? 
+	    <a href="tex/writeup.pdf" target="_blank">Open in new tab</a> or 
+	    <a href="tex/writeup.pdf" download>Download</a>.
+	</p>
+
+
+</section>
+
+<footer>
+    <hr>
+    <p><small>Compiled locally. Verified with GDB.</small></p>
+</footer>
+
+</body>
+</html>
+
